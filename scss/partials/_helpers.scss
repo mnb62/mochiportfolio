@@ -1,0 +1,19 @@
+
+.text-centered {
+  text-align: center;
+  }
+
+/* FULL-WIDTH HELPER */
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+  .full-width img {
+    width: 100%;
+  }

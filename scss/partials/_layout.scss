@@ -13,6 +13,27 @@ body {
     grid-template-rows: auto1fr auto;
 }
 
+/*HEADER & FOOTER*/
+
+.site-header,
+.site-footer {
+  font-family: gaultier-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 0.15em;
+}
+
+
+/*SITE-ID*/
+
+.site-id {
+    padding-top: 3em;
+    padding-bottom: .5em;
+  }
+
 /*SITE-NAV*/
 
 .site-navigation ul {
@@ -32,6 +53,26 @@ body {
     display: inline-block;
   }
 
+/*SITE-MAIN*/
+
+.site-main {
+  margin: 20px auto;
+}
+
+/*SECTION*/
+
+section {
+    padding: 0 0 3em 0;
+  }
+
+
+/* HERO SECTIONS */
+.hero {
+    padding: 2em 0;
+    /* background: #dedede; */
+    margin-bottom: 3em;
+}
+
   /*THUMB GRID*/
   
   .thumbgrid {
@@ -39,6 +80,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 50%;
   }
   
   .thumbgrid li {
@@ -86,9 +128,9 @@ body {
   .thumb-container:hover .overlay {
     opacity: 1;
   }
-  
+
   .thumb-text {
-    color: white;
+    color: $black;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -98,3 +140,20 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  /* #LAYOUT: FLEX GRID */
+@media (min-width: 768px) {
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .one-third.column {
+        width: 32%;
+    }
+    .two-thirds.column {
+        width: 60%;
+    }
+    
+}
