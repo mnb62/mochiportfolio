@@ -1,0 +1,17 @@
+/*BUTTON*/
+
+.button {
+    font-family: $headers;
+    color: $black;
+    background-color: $yellow;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 7px 9px;
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .button:hover {
+    color:$yellow;
+    background-color: $black;
+    border: 2px solid $yellow;
+  }
